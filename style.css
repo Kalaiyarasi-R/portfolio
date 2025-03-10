@@ -1,0 +1,366 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    position: sticky !important;
+    width: 100%;
+    top: 0%;
+    left:0%;
+    box-shadow: 0px 5px 8px  rgba(0,0,0,.5);
+    z-index: 10;
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.nav-link{
+    color: white;
+    border-bottom: 1px solid transparent;
+
+   
+
+}
+.nav-link:hover{
+    border-bottom: 1px solid white !important;
+
+
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* home Section*/
+
+#Home{
+    width:100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(bg2.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    flex-direction: column;
+    
+}
+#Home p{
+    top: 50%;
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+#Home p:nth-child(1){
+    animation-delay: 0s;
+}
+#Home p:nth-child(2){
+    animation-delay: 3s;
+}
+#Home p:nth-child(3){
+    animation-delay: 6s;
+}
+@keyframes text{
+    50%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#Home span{
+    color: #E50046;
+
+}
+@media screen and (max-width:576px){
+    #Home p{
+        font-size:80px;
+    }
+    
+}
+/* about section*/
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ee4577;
+    color:white;
+}
+.circle{
+    width: 500px;
+    height:400px;
+     background: #cf285a;
+     border-radius: 50%;
+     position:relative;
+     box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+     transition: 1s;
+}
+.circle img{
+    position:absolute;
+    height:200px;
+    width: 150px;
+    top:25%;
+    left:6%;
+    margin-left: 20px;
+   border-radius: 100%;
+   box-shadow: 0px 30px 50px rgba(0,0,0,.4);
+   transition: 1s;
+
+}
+.myself p{
+    background-color:#E50046;
+    margin-left: 70px;
+    padding:30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+}
+.circle:hover{
+    width:700px;
+    height:500px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.circle,img:hover{
+    position: absolute;
+    transition: 1s;
+
+}
+.circle:hover .content{
+    position: absolute;
+    top: 10%;
+    right:0;
+    width: 50%;
+    opacity:1;
+    transition: 1s;
+
+}
+.circle .content{
+    opacity:0 ;
+    
+}
+.myself{
+    font-size: 20px;
+}
+
+@media screen and (max-width:576px) {
+    .circle{
+        width: 500px;
+        height:400px;
+         background:#521a2b ;
+         border-radius: 50%;
+         position:relative;
+         box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+         transition: 1s;
+    }
+    .circle,img:hover{
+        position: absolute;
+        transition: 1s;
+        left: 10%;
+    
+    }
+    .circle:hover{
+        width:400px;
+        height:610px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .circle:hover .content{
+        position: absolute;
+        top: 39%;
+        right:0;
+        width: 100%;
+        opacity:1;
+        transition: 1s;
+        padding: 20px;
+    
+    }
+    .circle .content{
+        opacity:0 ;
+        
+    }
+}
+
+/*Skills Section*/
+#Skills{
+    padding:5%;
+    background-color: aliceblue;
+}
+#Skills .container{
+    margin-top:6%;
+    margin-bottom:6%;
+
+
+}
+label{
+    font-size:20px;
+}
+.progress{
+    height: 25px !important;
+    border-radius: 100%;
+    box-shadow: 2px 4px 5px gray,-2px -2px 5px white;
+}
+
+/*Projects*/
+#Projects{
+    background-color:#181C14;
+    color: white;
+    padding:5%;
+}
+
+ #Projects .one{
+    width: 300px;
+    height:300px;
+     background:#1b1b1b;
+     border-radius: 10%;
+     position:relative;
+     box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+     transition: 1s;
+     border:1px white;
+     margin-top:30px;
+     padding:20px;
+     left:40%;
+     top:30%;
+     transition: 1s;
+     border:1px solid gray;
+ }
+#Projects .one img{
+    left:30%;
+    top:5%;
+    margin-left: 35%;
+    margin-top:10%;
+    margin-bottom:10%;
+    margin-right: 30%;
+    position: sticky;
+    
+ }
+#Projects .one:hover{
+    border: 1px solid white;
+    background-color: #E50046;
+    transition: 1s;
+    border: unset;
+
+
+}
+@media screen and (max-width:576px){
+    #Projects{
+        background-color:rgb(0, 0, 0);
+        color: white;
+        padding:4%;
+    }
+    #Projects .one{
+        width: 300px;
+        height:300px;
+         background:#1b1b1b;
+         border-radius: 10%;
+         position:relative;
+         box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+         transition: 1s;
+         border:1px white;
+         margin-top:30px;
+         padding:20px;
+         left:20%;
+         top:30%;
+         transition: 2s;
+     }
+
+    
+}
+
+/*--Technical Knowledges*/
+#Technical-Skills{
+    background-color:#0c0b0b;
+    color: white;
+    padding:5%;
+
+}
+#Technical-Skills .two{
+    width: 200px;
+    height:180px;
+     background:#1b1b1b;
+     border-radius: 10%;
+     position:relative;
+     box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+     transition: 1s;
+     border:1px white;
+     margin-top:30px;
+     padding:20px;
+     left:45%;
+     top:30%;
+     transition: 1s;
+     border: 1px solid gray;
+ }
+ #Technical-Skills .two i{
+    margin-right: 30%;
+    margin-left: 40%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+ }
+ #Technical-Skills .two i:hover{
+    cursor: pointer;
+    color: #E50046;
+
+ }
+ #Technical-Skills .two:hover{
+    border:unset;
+    background-color: green;
+    transition: 1s;
+ }
+
+ @media screen and (max-width:576px){
+
+    #Technical-Skills .two{
+
+        width: 200px;
+        height:180px;
+         background:#1b1b1b;
+         border-radius: 10%;
+         position:relative;
+         box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+         transition: 1s;
+         border:1px white;
+         margin-top:30px;
+         padding:20px;
+         left:30%;
+         top:30%;
+         transition: 1s;
+         border: 1px solid gray;
+         
+     }
+    
+ }
+
+ /*contact us*/
+
+ #Contact{
+    background-color:rgb(241, 173, 112);
+    padding: 7%;
+ }
+#Contact iframe{
+   border-radius: 5px;
+
+}
+#Contact h2{
+    margin-bottom: 5%;
+    
+}
+#Contact button{
+    padding: 5px;
+    border: unset;
+    background-color: rgb(32, 4, 32);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+#contact.add{
+    background-color: #E50046;
+    margin-bottom: 5px;
+}
